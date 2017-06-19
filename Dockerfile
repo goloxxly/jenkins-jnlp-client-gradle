@@ -8,6 +8,6 @@ RUN yum install -y curl unzip docker-ce
 RUN yum -y clean all
 
 # Gradle
-RUN curl -o /opt/gradle.zip -L https://services.gradle.org/distributions/gradle-3.5-bin.zip && unzip /opt/gradle.zip -d /opt && rm /opt/gradle.zip
+RUN curl -o /opt/gradle.zip -L https://services.gradle.org/distributions/gradle-4.0-bin.zip && unzip /opt/gradle.zip -d /opt && rm /opt/gradle.zip
 
-ENV PATH /opt/gradle-3.5/bin:$PATH
+ENV PATH /opt/gradle-4.0/bin:$PATH
