@@ -1,4 +1,4 @@
-FROM fabric8/jenkins-jnlp-client
+FROM goloxxly/jenkins-jnlp-client-java:2.0.0
 
 # Running all yum related command in one RUN to minimalise the size of the produced Docker image
 RUN yum install -y yum-utils \
